@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TODO LIST APP</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- CONTAINER DIV -- contains the header content div and the add to do -->
+    <div class="container">
+
+        <!-- HEADER DIV -->
+        <div class="header">
+
+            <!-- clear div -- contains the refresh icon, onclick of the icon clears all the todo list in the local storage-->
+            <div class="clear">
+                <i class="fa fa-refresh"></i>
+            </div>
+            <!-- end of clear div -->
+
+            <!-- date div -- this block shows the present(today's) date-->
+            <div id="date">
+
+            </div>
+            <!-- end of clear div -->
+
+        </div>
+        <!-- END OF HEADER DIV -->
+
+        <!-- CONTENT DIV -->
+        <div class="content">
+
+            <!-- ul -- contains the list of all added todo -->
+            <ul id="list">
+                <!-- added todo is injected here in a li element -- each li contains a complete icon to check when a tode is completed, the title of the todo, and a delete icon  -->
+            </ul>
+            <!-- end of ul -->
+
+        </div>
+        <!-- END OF CONTENT DIV -->
+
+        <!-- ADD TO DO DIV -- contains the add item(todo) input -->
+        <div class="add-to-do">
+            <i class="fa fa-plus-circle" id="addBtn"></i>
+            <input type="text" id="input" placeholder="ADD A TODO">
+        </div>
+        <!--END OF ADD TO DO DIV -->
+
+    </div>
+    <!-- END OF CONTAINER DIV -->
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
